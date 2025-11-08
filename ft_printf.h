@@ -6,15 +6,16 @@
 /*   By: csilva <csilva@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:09:40 by csilva            #+#    #+#             */
-/*   Updated: 2025/11/07 13:13:43 by csilva           ###   ########.fr       */
+/*   Updated: 2025/11/08 17:07:49 by csilva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PRINTF_H
-
 # define PRINTF_H
 
 #include <stdio.h>
 #include <stdarg.h>
+
+
 
 #endif
