@@ -6,7 +6,7 @@
 /*   By: csilva <csilva@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:33:56 by csilva            #+#    #+#             */
-/*   Updated: 2025/11/10 17:12:38 by csilva           ###   ########.fr       */
+/*   Updated: 2025/11/10 18:13:28 by csilva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,13 @@ int	ft_putaddres(unsigned long n, int count)
 	if (ft_putchar_fd(base[n % 16], 1) == -1)
 		return (-1);
 	return (++count);
+}
+
+int	ft_checkaddres(void *n, int count)
+{
+	if (!n)
+		return (write (1, "(nil)", 5));
+	count += ft_putstr_fd("0x", 1);
+	count = ft_putaddres((unsigned long)n, count);
+	return (count);
 }
