@@ -6,7 +6,7 @@
 /*   By: csilva <csilva@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 12:53:12 by csilva            #+#    #+#             */
-/*   Updated: 2025/11/10 18:14:42 by csilva           ###   ########.fr       */
+/*   Updated: 2025/11/14 10:12:38 by csilva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,36 +65,6 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-
-/* int	main(void)
-{
-	printf("\n%d\n", ft_printf("Meu nome e %c", 'c'));
-	printf("\n%d\n", printf("Meu nome e %c", 'c'));
-
-	printf("\n%d\n", ft_printf("Meu nome e %s", "Caio"));
-	printf("\n%d\n", printf("Meu nome e %s", "Caio"));
-
-	printf("\n%d\n", ft_printf("Meu nome e %p", "Caio"));
-	printf("\n%d\n", printf("Meu nome e %p", "Caio"));
-
-	printf("\n%d\n", ft_printf("%d", 12345));
-	printf("\n%d\n", printf("%d", 12345));
-
-	printf("\n%d\n", ft_printf("%i", 1995));
-	printf("\n%d\n", printf("%i", 1995));
-
-	printf("\n%d\n", ft_printf("%u", 199));
-	printf("\n%d\n", printf("%u", 199));
-
-	printf("\n%d\n", ft_printf("%x", -2147483647));
-	printf("\n%d\n", printf("%x", -2147483647));
-
-	printf("\n%d\n", ft_printf("%X", -2147483647));
-	printf("\n%d\n", printf("%X", -2147483647));
-
-	printf("\n%d\n", ft_printf("%%"));
-	printf("\n%d\n", printf("%%"));
-} */
 
 /* #include <limits.h>
 #include <stdio.h>
@@ -185,7 +155,8 @@ void	test_pointer(void)
 	printf("\n[Test 4] Multiple pointers:\n");
 	ft = ft_printf("ft: %p %p %p\n", &x, str, NULL);
 	or = printf("or: %p %p %p\n", &x, str, NULL);
-	printf("Return: ft=%d, or=%d %s\n", ft, or, ft == or ? "✓" : "✗");
+	printf("Return: ft=%d, or=%d %s\n", ft, or, ft == or ? 
+	"\033[38;2;0;255;0m✓\033[0m" : "✗");
 	printf("\n[Test 5] Pointer address range:\n");
 	ft = ft_printf("ft: %p\n", (void *)0xFFFFFFFF);
 	or = printf("or: %p\n", (void *)0xFFFFFFFF);
@@ -376,4 +347,5 @@ int	main(void)
 	printf("║     ALL TESTS COMPLETED                            ║\n");
 	printf("╚════════════════════════════════════════════════════╝\n");
 	return (0);
-} */
+}
+ */
